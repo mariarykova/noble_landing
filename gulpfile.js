@@ -39,7 +39,12 @@ const html = function () {
 
 const scripts = function () {
   return gulp
-    .src(["node_modules/swiper/swiper-bundle.min.js", "src/js/**/*.js"])
+    .src([
+      "node_modules/swiper/swiper-bundle.min.js",
+      "node_modules/gsap/dist/gsap.min.js",
+      "node_modules/gsap/dist/ScrollTrigger.min.js",
+      "src/js/**/*.js",
+    ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/js"))

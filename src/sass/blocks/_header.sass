@@ -1,12 +1,28 @@
 .header
     padding: 48px 0px
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
     &__wrap
         display: flex
         justify-content: center
     &__logo
         height: 56px
+        display: flex
+        justify-content: center
+        align-items: center
+        overflow: hidden
+        transform: scale(2)
+        @include sm
+            transform: none
         img
             max-height: 100%
             object-fit: contain
+            visibility: hidden
+            &:last-child
+                margin-left: 15px
         @include xs
             height: auto
+        @include xxs
+            height: 30px
