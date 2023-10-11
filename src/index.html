@@ -38,7 +38,9 @@
       <div class="container">
         <div class="header__wrap">
           <a href="#" class="header__logo">
-            <img src="icons/logo.svg" alt="Logo Grape Noble Nectars" />
+            <img src="icons/grape.svg" alt="Logo Grape Noble Nectars" />
+            <img src="icons/noble.svg" alt="Logo Grape Noble Nectars" />
+            <img src="icons/nectars.svg" alt="Logo Grape Noble Nectars" />
           </a>
         </div>
       </div>
@@ -65,52 +67,100 @@
             Vintages for Discerning Tastes
           </h1>
           <div class="promo__wrap">
-            <div class="promo__info">
-              <p class="promo__text main-text main-text_mb">
-                Welcome to Noble Nectars, your gateway to the world of
-                extraordinary wines. Step into a realm of unrivaled
-                sophistication and discover a curated selection of the finest
-                vintages from the most renowned vineyards across Europe and
-                Asia.
-              </p>
-              <p class="promo__text main-text main-text_mb">
-                At Noble Nectars, we have meticulously sourced and assembled an
-                exquisite collection of wines that embody the epitome of quality
-                and craftsmanship. Each bottle is a testament to the dedication
-                and expertise of the esteemed winemakers who have mastered their
-                art over generations.
-              </p>
-              <p class="promo__text main-text main-text_mb">
-                Indulge your senses as you peruse our exclusive offerings, where
-                every label tells a tale of heritage, tradition, and the unique
-                terroir that shapes each vineyard's distinctive character.
-              </p>
-              <p class="promo__text main-text main-text_mb">
-                From the rolling hills of Tuscany to the sun-drenched vineyards
-                of Bordeaux, from the majestic wineries of Napa Valley to the
-                hidden gems of the Old World, we have traveled far and wide to
-                bring you the most sought-after treasures of the wine world.
-              </p>
-            </div>
-            <div class="promo__img">
-              <picture class="picture object-fit-cover">
-                <source
-                  srcset="img/promo.webp, img/promo@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  src="img/promo.png"
-                  srcset="img/promo.png, img/promo@2x.png 2x"
-                  alt="Promo"
-                />
-              </picture>
+            <div class="promo__inner">
+              <div class="promo__left">
+                <div class="promo__left-inner">
+                  <div class="promo_left1">
+                    <picture class="picture object-fit-cover">
+                      <source
+                        srcset="
+                          img/promo-img-side-1.webp,
+                          img/promo-img-side-1@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/promo-img-side-1.png"
+                        srcset="
+                          img/promo-img-side-1.png,
+                          img/promo-img-side-1@2x.png 2x
+                        "
+                        alt="Promo"
+                      />
+                    </picture>
+                  </div>
+                  <div class="promo_left2">
+                    <picture class="picture object-fit-cover">
+                      <source
+                        srcset="
+                          img/promo-img-side-2.webp,
+                          img/promo-img-side-2@2x.webp 2x
+                        "
+                        type="image/webp"
+                      />
+                      <img
+                        src="img/promo-img-side-2.png"
+                        srcset="
+                          img/promo-img-side-2.png,
+                          img/promo-img-side-2@2x.png 2x
+                        "
+                        alt="Promo"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="promo__info">
+                <p class="promo__text main-text main-text_mb">
+                  Welcome to Noble Nectars, your gateway to the world of
+                  extraordinary wines. Step into a realm of unrivaled
+                  sophistication and discover a curated selection of the finest
+                  vintages from the most renowned vineyards across Europe and
+                  Asia.
+                </p>
+                <p class="promo__text main-text main-text_mb">
+                  At Noble Nectars, we have meticulously sourced and assembled
+                  an exquisite collection of wines that embody the epitome of
+                  quality and craftsmanship. Each bottle is a testament to the
+                  dedication and expertise of the esteemed winemakers who have
+                  mastered their art over generations.
+                </p>
+                <p class="promo__text main-text main-text_mb">
+                  Indulge your senses as you peruse our exclusive offerings,
+                  where every label tells a tale of heritage, tradition, and the
+                  unique terroir that shapes each vineyard's distinctive
+                  character.
+                </p>
+                <p class="promo__text main-text main-text_mb">
+                  From the rolling hills of Tuscany to the sun-drenched
+                  vineyards of Bordeaux, from the majestic wineries of Napa
+                  Valley to the hidden gems of the Old World, we have traveled
+                  far and wide to bring you the most sought-after treasures of
+                  the wine world.
+                </p>
+              </div>
+              <div class="promo__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/promo.webp, img/promo@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/promo.png"
+                    srcset="img/promo.png, img/promo@2x.png 2x"
+                    alt="Promo"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="features pb-200">
         <div class="container">
-          <h2 class="features__title section-title section-title_wide mb-120">
+          <h2
+            class="features__title section-title section-title_wide mb-120 opacity-title"
+          >
             Exquisite Wines, Unforgettable Moments: Noble Nectars - Your Gateway
             to Elegance and Sophistication
           </h2>
@@ -201,7 +251,7 @@
               </div>
             </div>
 
-            <div class="tradition__bottom">
+            <div class="tradition__bottom parallax">
               <picture class="picture object-fit-cover">
                 <source
                   srcset="img/description2.webp, img/description2@2x.webp 2x"
@@ -210,13 +260,12 @@
                 <img
                   src="img/description2.png"
                   srcset="img/description2.png, img/description2@2x.png 2x"
-                  loading="lazy"
                   alt="description2"
                 />
               </picture>
             </div>
           </div>
-          <div class="tradition__right">
+          <div class="tradition__right parallax">
             <picture class="picture object-fit-cover">
               <source
                 srcset="img/description1.webp, img/description1@2x.webp 2x"
@@ -225,7 +274,6 @@
               <img
                 src="img/description1.png"
                 srcset="img/description1.png, img/description1@2x.png 2x"
-                loading="lazy"
                 alt="description1"
               />
             </picture>
@@ -236,11 +284,13 @@
         <div class="container">
           <div class="country__wrap">
             <div class="country__left">
-              <h2 class="country__title section-title section-title_wide">
+              <h2
+                class="country__title section-title section-title_wide opacity-title"
+              >
                 Discover the Elegance of Noble Nectars: Unveiling the Finest
                 Wines from Europe and Asia
               </h2>
-              <div class="country__img">
+              <div class="country__img parallax">
                 <picture class="picture object-fit-cover">
                   <source
                     srcset="img/country.webp, img/country@2x.webp 2x"
@@ -249,7 +299,6 @@
                   <img
                     src="img/country.png"
                     srcset="img/country.png, img/country@2x.png 2x"
-                    loading="lazy"
                     alt="country"
                   />
                 </picture>
@@ -279,7 +328,7 @@
           </div>
         </div>
       </section>
-      <section class="story pt-200 pb-200 light">
+      <section class="story pt-200 light">
         <div class="container">
           <h2
             class="story__title section-title section-title_wide section-title_light mb-120"
@@ -289,58 +338,91 @@
           </h2>
         </div>
         <div class="story__slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <picture class="picture object-fit-cover">
-                <source
-                  srcset="img/type1.webp, img/type1@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  src="img/type1.png"
-                  srcset="img/type1.png, img/type1@2x.png 2x"
-                  alt="type1"
-                />
-              </picture>
+          <div class="slider__wrapper swiper-wrapper">
+            <div class="slider__slide swiper-slide">
+              <p class="slider__text">
+                In addition to our exceptional wine collection, Noble Nectars
+                offers a carefully curated selection of exquisite wine
+                accessories. From elegant decanters to fine glassware, our range
+                of accessories adds an extra touch of refinement to the
+                wine-drinking experience
+              </p>
+              <div class="slider__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/type1.webp, img/type1@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/type1.png"
+                    srcset="img/type1.png, img/type1@2x.png 2x"
+                    alt="type1"
+                  />
+                </picture>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <picture class="picture object-fit-cover">
-                <source
-                  srcset="img/type2.webp, img/type2@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  src="img/type2.png"
-                  srcset="img/type2.png, img/type2@2x.png 2x"
-                  alt="type2"
-                />
-              </picture>
+            <div class="slider__slide swiper-slide">
+              <p class="slider__text">
+                At Noble Nectars, quality is paramount. We have established
+                relationships with renowned vineyards and winemakers,
+                guaranteeing that every bottle in our collection represents the
+                epitome of craftsmanship, tradition, and excellence
+              </p>
+              <div class="slider__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/type2.webp, img/type2@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/type2.png"
+                    srcset="img/type2.png, img/type2@2x.png 2x"
+                    alt="type2"
+                  />
+                </picture>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <picture class="picture object-fit-cover">
-                <source
-                  srcset="img/type3.webp, img/type3@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  src="img/type3.png"
-                  srcset="img/type3.png, img/type3@2x.png 2x"
-                  alt="type3"
-                />
-              </picture>
+            <div class="slider__slide swiper-slide">
+              <p class="slider__text">
+                Our knowledgeable sommeliers are passionate about wine and are
+                committed to providing personalized guidance to our customers.
+                They are readily available to share their expertise, offer
+                recommendations
+              </p>
+              <div class="slider__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/type3.webp, img/type3@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/type3.png"
+                    srcset="img/type3.png, img/type3@2x.png 2x"
+                    alt="type3"
+                  />
+                </picture>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <picture class="picture object-fit-cover">
-                <source
-                  srcset="img/type4.webp, img/type4@2x.webp 2x"
-                  type="image/webp"
-                />
-                <img
-                  src="img/type4.png"
-                  srcset="img/type4.png, img/type4@2x.png 2x"
-                  alt="type4"
-                />
-              </picture>
+            <div class="slider__slide swiper-slide">
+              <p class="slider__text">
+                We take pride in our commitment to delivering unparalleled
+                customer service and ensuring your every visit is an
+                extraordinary one. We invite you to experience the epitome of
+                luxury and refinement at Noble Nectars
+              </p>
+              <div class="slider__img">
+                <picture class="picture object-fit-cover">
+                  <source
+                    srcset="img/type4.webp, img/type4@2x.webp 2x"
+                    type="image/webp"
+                  />
+                  <img
+                    src="img/type4.png"
+                    srcset="img/type4.png, img/type4@2x.png 2x"
+                    alt="type4"
+                  />
+                </picture>
+              </div>
             </div>
           </div>
         </div>

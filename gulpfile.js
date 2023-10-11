@@ -39,7 +39,12 @@ const html = function () {
 
 const scripts = function () {
   return gulp
-    .src(["node_modules/swiper/swiper-bundle.min.js", "src/js/**/*.js"])
+    .src([
+      "node_modules/swiper/swiper-bundle.min.js",
+      "node_modules/gsap/dist/gsap.min.js",
+      "node_modules/gsap/dist/ScrollTrigger.min.js",
+      "src/js/**/*.js",
+    ])
     .pipe(concat("main.min.js"))
     .pipe(uglify())
     .pipe(gulp.dest("dist/js"))
@@ -88,9 +93,9 @@ const watch = function () {
   gulp.watch("src/img/**/*.{png,jpg,jpeg}", gulp.parallel(webpImages));
 };
 
-const deploy = function () {
-  return gulp.src("/dist/**/*").pipe(ghPages());
-};
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
 
 exports.server = server;
 exports.styles = styles;
@@ -101,7 +106,6 @@ exports.icons = icons;
 exports.images = images;
 exports.webpImages = webpImages;
 exports.watch = watch;
-exports.deploy = deploy;
 
 exports.default = gulp.parallel(
   watch,
@@ -112,6 +116,5 @@ exports.default = gulp.parallel(
   scripts,
   fonts,
   icons,
-  html,
-  deploy
+  html
 );
