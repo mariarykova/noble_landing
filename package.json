@@ -4,6 +4,7 @@
   "description": "Dev",
   "main": "dev",
   "scripts": {
+    "deploy": "gulp build && gh-pages -d build",
     "test": "npm i"
   },
   "author": "",
