@@ -93,9 +93,9 @@ const watch = function () {
   gulp.watch("src/img/**/*.{png,jpg,jpeg}", gulp.parallel(webpImages));
 };
 
-const deploy = function () {
-  return gulp.src("/dist/**/*").pipe(ghPages());
-};
+gulp.task("deploy", function () {
+  return gulp.src("./dist/**/*").pipe(ghPages());
+});
 
 exports.server = server;
 exports.styles = styles;
@@ -106,7 +106,6 @@ exports.icons = icons;
 exports.images = images;
 exports.webpImages = webpImages;
 exports.watch = watch;
-exports.deploy = deploy;
 
 exports.default = gulp.parallel(
   watch,
@@ -117,6 +116,5 @@ exports.default = gulp.parallel(
   scripts,
   fonts,
   icons,
-  html,
-  deploy
+  html
 );
